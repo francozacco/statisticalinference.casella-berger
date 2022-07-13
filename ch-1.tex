@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{adjustbox}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[mathscr]{euscript}
+
+\title{\textbf{Solutions to selected problems on Statistical Inference - Casella and Berger}}
+\author{Franco Zacco}
+\date{}
+
+\addtolength{\topmargin}{-3cm}
+\addtolength{\textheight}{3cm}
+
+\newcommand{\hatr}{\bm{\hat{r}}}
+\newcommand{\hatx}{\bm{\hat{x}}}
+\newcommand{\haty}{\bm{\hat{y}}}
+\newcommand{\hatz}{\bm{\hat{z}}}
+\newcommand{\hatth}{\bm{\hat{\theta}}}
+\newcommand{\hatphi}{\bm{\hat{\phi}}}
+\newcommand{\hatrho}{\bm{\hat{\rho}}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section*{Chapter 1 - Probability Theory}
+
+	\begin{proof}{\textbf{1.1}}
+        The sample space in each case is defined below
+        \begin{itemize}
+            \item [(a)] $S = \{H,T\}^4$
+            \item [(b)] $S = \{0, 1, 2, ...\} = \mathbb{Z^*}$
+            \item [(c)] $S = [0, \infty) =  \mathbb{R^*}$
+            \item [(d)] $S = (0, \infty) = \mathbb{R^+}$
+            \item [(e)] $S = [0, 1]$
+        \end{itemize}
+    \end{proof}
+	\begin{proof}{\textbf{1.4}}
+        \begin{itemize}
+            \item [(a)] "A or B or both" is $P(A \cup B)$, then by theorem
+            (1.2.9) we know that
+            $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+            \item [(b)] "A or B but not both" is $(A \cap B^c) \cup (B \cap A^c)$
+            then
+            \begin{align*}
+                P((A \cap B^c) \cup (B \cap A^c)) &= P(A \cap B^c) + P(B \cap A^c)\\
+                    &= P(A) - P(A \cap B) + P(B) - P(A \cap B)\\
+                    &= P(A) + P(B) - 2P(A \cap B)
+            \end{align*}
+            \item [(c)] "At least one of A or B" is $A \cup B$ so
+            $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+            \item [(d)] "At most one of A or B" is $(A \cap B)^c$ then
+            $$P((A \cap B)^c) = 1 - P(A \cap B)$$
+        \end{itemize}
+    \end{proof}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
